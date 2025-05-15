@@ -9,7 +9,7 @@ public class HelloController {
     @GetMapping("/")
     public String hello() {
         burnCpu(3000)
-        return "hello spring";
+        return "hello spring!";
     }
 
     private void burnCpu(long milliseconds) {
