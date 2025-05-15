@@ -8,7 +8,9 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        burnCpu(3000);
+        for (int i = 0; i < 10; i++) {  
+            new Thread(() -> burnCpu(10000)).start(); 
+        }
         return "hello spring!!S";
     }
 
