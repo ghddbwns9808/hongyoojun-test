@@ -8,7 +8,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        burnCpu(3000)
+        burnCpu(3000);
         return "hello spring!!S";
     }
 
