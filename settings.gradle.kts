@@ -1,1 +1,1 @@
-rootProject.name = "flux-oci-sample"
+rootProject.name = "hongyoojun-test-sample"

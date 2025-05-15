@@ -1,23 +1,23 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flux-oci-sample
-  namespace: gne-test
+  name: hongyoojun-test-d
+  namespace: hongyoojun-test
   labels:
-    app: flux-oci-sample
+    app: hongyoojun-test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flux-oci-sample
+      app: hongyoojun-test-sample
   template:
     metadata:
       labels:
-        app: flux-oci-sample
+        app: hongyoojun-test-sample
     spec:
       containers:
-      - name: flux-oci-sample
-        image: ghcr.io/shinhancard/flux-oci-sample:image-REPLACEME
+      - name: hongyoojun-test-c
+        image: ghcr.io/ghddbwns9808/hongyoojun-test:image-REPLACEME
         ports:
         - containerPort: 8080
         resources:
