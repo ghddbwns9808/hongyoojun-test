@@ -13,7 +13,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello() {
-        return "hello yoojun!!";
+        return "Hello Yoojun!!";
     }
 
     @GetMapping("/cpustart")
